@@ -7,13 +7,16 @@ import com.javacents.threadlocalpool.thread.UserHandlerThread;
 import com.javacents.threadlocalpool.userservice.UserInfo;
 import com.javacents.threadlocalpool.userservice.UserService;
 
+/**
+	App
+*/
 public class App {
 	public ExecutorService pool = Executors.newFixedThreadPool(10);
 
 	public ExecutorService getPool() {
 		return pool;
 	}
-
+ 
 	public static void main(String[] args) {
 		App app = new App();
 		UserService userService = new UserService();
