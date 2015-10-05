@@ -1,7 +1,7 @@
 package com.javacents.threadlocalpool.userservice;
 
 /**
- * W for ThreadLocal
+ * Wrapper for ThreadLocal
  */
 public class UserContext {
 	private static final ThreadLocal<UserInfo> userInfoThreadLocal = ThreadLocal.<UserInfo> withInitial(() -> {
